@@ -1,5 +1,9 @@
 /* Fill out these functions using Mongoose queries*/
-var  Listing = require('./ListingSchema.js') 
+var fs = require('fs'),
+    mongoose = require('mongoose'), 
+    Schema = mongoose.Schema, 
+    Listing = require('./ListingSchema.js'), 
+config = require('./config');
 
 var findLibraryWest = function() {
   /* 
