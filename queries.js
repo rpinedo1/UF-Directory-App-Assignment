@@ -1,5 +1,7 @@
 /* Fill out these functions using Mongoose queries*/
-var  Listing = require('./ListingSchema.js') 
+var  Listing = require('./ListingSchema.js'),
+	mongoose = require('mongoose'), 
+	config = require('./config');
 
 var findLibraryWest = function() {
   /* 
@@ -49,6 +51,8 @@ var retrieveAllListings = function() {
    
    });
 };
+
+mongoose.connect(config.db.uri,{userMongoClient: true});
 
 findLibraryWest();
 removeCable();
