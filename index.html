@@ -70,8 +70,8 @@
               
                 <input class="form-control" placeholder="Code" ng-model="code" required>
                 <input class="form-control" placeholder="Building Name" ng-model="name" required>
-                <input class="form-control" placeholder="Latitude" ng-model="coordinates.latitude">
-                <input class="form-control" placeholder="Longitude" ng-model="coordinates.longitude">
+                <input class="form-control" placeholder="Latitude" ng-model="latitude">
+                <input class="form-control" placeholder="Longitude" ng-model="longitude">
                 <input class="form-control" placeholder="Address" ng-model="address">
                 <button class"btn btn-default" type="submit" ng-click="addListing()">Add Entry</button>
 
@@ -88,7 +88,7 @@
                    * consider how to use ng-click within the the table to implement this feature
 
              -->
-            <div class="AditionalDetatils" ng-show="detailedInfo">
+            <div class="DetailViewer" ng-show="detailedInfo">
               <table>
                 <tr>
                   <th><h5>Address:</h5></th>
