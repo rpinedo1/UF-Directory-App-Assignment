@@ -6,3 +6,7 @@
   max-height: 400px;
   overflow: auto;
 }
+
+.tableWrapper th {
+	font: uppercase;
+}
